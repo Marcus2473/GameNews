@@ -1,0 +1,125 @@
+/* Fonte futurista */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  color: #d0ffd0;
+}
+
+/* Cabeçalho / menu */
+#menu {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #111;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0f0;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #0f0;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ffaa;
+}
+
+#conteudo {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  background-color: #111;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+}
+
+h2 {
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #0f0;
+  margin-top: 15px;
+}
+
+.noticia {
+  background-color: #1a1a1a;
+  border-left: 4px solid #00ff00;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 255, 0, 0.3);
+}
+
+.noticia p {
+  color: #c0ffc0;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  #menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  #conteudo {
+    padding: 15px;
+  }
+
+  section {
+    margin: 10px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+}
+#noticias {
+  max-width: 600px; /* Largura máxima das notícias */
+  margin-left: 40px; /* Alinha à esquerda com espaço */
+  margin-right: auto; /* Deixa o lado direito livre */
+}
+
+.noticia img {
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 15px #00ff00;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.noticia img:hover {
+  transform: scale(1.03);
+}

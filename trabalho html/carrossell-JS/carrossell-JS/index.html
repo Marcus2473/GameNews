@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCarros - Loja de Carros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>AutoCarros</h1>
+    <p>Seu próximo carro está aqui!</p>
+  </header>
+
+  <main>
+    <section class="carrossel-container">
+      <div class="carrossel">
+        <img id="imagem" src="carro1.jpg" alt="Carro em destaque">
+        <div class="botoes">
+          <button onclick="anterior()">◀</button>
+          <button onclick="proxima()">▶</button>
+        </div>
+      </div>
+      <p class="descricao" id="descricao">Carro modelo 2024, completo e econômico.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AutoCarros - Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
